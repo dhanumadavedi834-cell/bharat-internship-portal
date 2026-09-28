@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternIndia - PM Internship & National Internship Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        indiaNavy: '#0F2C59',
+                        indiaBlue: '#0056B3',
+                        indiaOrange: '#FF671F',
+                        indiaGreen: '#046A38',
+                        indiaLight: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Top Govt Bar -->
+    <div class="bg-indiaNavy text-white text-xs py-1.5 px-4 flex justify-between items-center border-b border-blue-900">
+        <div class="flex items-center space-x-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-indiaOrange"></span>
+            <span>Government of India - Ministry of Skill Development & Entrepreneurship Initiative</span>
+        </div>
+        <div class="flex items-center space-x-4 text-gray-300 text-xs">
+            <a href="#" class="hover:underline">Skip to main content</a>
+            <span>|</span>
+            <a href="#" class="hover:underline">Screen Reader Access</a>
+            <span>|</span>
+            <span class="font-bold text-white">A+</span>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Brand Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-indiaNavy rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-md border-b-4 border-indiaOrange">
+                        II
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black tracking-tight text-indiaNavy">Intern<span class="text-indiaOrange">India</span></span>
+                        <p class="text-[10px] tracking-wider uppercase text-gray-500 font-semibold">National Internship Portal</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+                    <a href="#home" class="text-indiaBlue font-semibold hover:text-indiaNavy transition">Home</a>
+                    <a href="#browse" class="hover:text-indiaBlue transition">Explore Internships</a>
+                    <a href="#govt" class="hover:text-indiaBlue transition">Govt Schemes</a>
+                    <a href="#dashboard" class="hover:text-indiaBlue transition">Student Dashboard</a>
+                    <a href="#faq" class="hover:text-indiaBlue transition">FAQs</a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center space-x-3">
+                    <button class="px-4 py-2 border border-indiaBlue text-indiaBlue font-medium rounded-lg hover:bg-blue-50 text-sm transition">Sign In</button>
+                    <button class="px-4 py-2 bg-indiaBlue text-white font-medium rounded-lg hover:bg-indiaNavy text-sm transition shadow-sm">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative bg-gradient-to-r from-indiaNavy via-blue-900 to-indiaNavy text-white py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full text-xs font-medium border border-white/20">
+                    <span class="bg-indiaOrange text-white text-[10px] px-2 py-0.5 rounded-full font-bold">NEW</span>
+                    <span>PM Internship Scheme 2026 Phase 2 Applications Open</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+                    Empowering India's Youth with <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-white to-green-400">Real Opportunity</span>
+                </h1>
+                <p class="text-blue-100 text-base sm:text-lg max-w-2xl font-light">
+                    Search and apply for over 125,000+ verified internship opportunities across Public Sector Undertakings (PSUs), Ministries, and Top Fortune 500 Private Enterprises.
+                </p>
+
+                <!-- Stat Counters -->
+                <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10 max-w-lg">
+                    <div>
+                        <div class="text-2xl font-bold text-white">125K+</div>
+                        <div class="text-xs text-gray-300">Active Opportunities</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">5,000+</div>
+                        <div class="text-xs text-gray-300">Partner Organizations</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">₹12,000</div>
+                        <div class="text-xs text-gray-300">Avg. Monthly Stipend</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image / Badge -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="bg-white text-gray-800 p-6 rounded-2xl shadow-2xl border border-gray-100 w-full max-w-md">
+                    <div class="flex items-center space-x-3 pb-4 border-b border-gray-100">
+                        <i data-lucide="award" class="w-8 h-8 text-indiaOrange"></i>
+                        <div>
+                            <h3 class="font-bold text-gray-900">PM Internship Portal</h3>
+                            <p class="text-xs text-gray-500">Government Guarantee Scheme</p>
+                        </div>
+                    </div>
+                    <ul class="py-4 space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-indiaGreen"></i>
+                            <span>Monthly Stipend: ₹5,000 + One-time allowance</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-indiaGreen"></i>
+                            <span>Direct Benefit Transfer (DBT) enabled</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-indiaGreen"></i>
+                            <span>12 Months Hands-on Industry Training</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-indiaOrange hover:bg-orange-600 text-white font-bold rounded-lg transition text-center shadow-md">
+                        Check Eligibility & Apply
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow space-y-12">
+
+        <!-- Search & Filter Bar Section -->
+        <section id="browse" class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 -mt-16 relative z-20">
+            <form class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="relative">
+                    <i data-lucide="search" class="w-5 h-5 absolute left-3 top-3.5 text-gray-400"></i>
+                    <input type="text" placeholder="Title, Skill, or Organization..." class="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indiaBlue">
+                </div>
+
+                <div class="relative">
+                    <i data-lucide="map-pin" class="w-5 h-5 absolute left-3 top-3.5 text-gray-400"></i>
+                    <select class="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-600 focus:outline-none focus:ring-2 focus:ring-indiaBlue appearance-none">
+                        <option value="">Location (All India)</option>
+                        <option>New Delhi</option>
+                        <option>Bengaluru</option>
+                        <option>Mumbai</option>
+                        <option>Hyderabad</option>
+                        <option>Remote / Work from Home</option>
+                    </select>
+                </div>
+
+                <div class="relative">
+                    <i data-lucide="briefcase" class="w-5 h-5 absolute left-3 top-3.5 text-gray-400"></i>
+                    <select class="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-600 focus:outline-none focus:ring-2 focus:ring-indiaBlue appearance-none">
+                        <option value="">Category / Sector</option>
+                        <option>Government & PSUs</option>
+                        <option>Software & IT</option>
+                        <option>Core Engineering</option>
+                        <option>Finance & Banking</option>
+                        <option>Public Policy & Governance</option>
+                    </select>
+                </div>
+
+                <button type="button" class="w-full py-3 bg-indiaBlue hover:bg-indiaNavy text-white font-semibold rounded-lg shadow-md transition flex items-center justify-center space-x-2">
+                    <i data-lucide="filter" class="w-4 h-4"></i>
+                    <span>Search Opportunities</span>
+                </button>
+            </form>
+
+            <!-- Detailed Filter Chips -->
+            <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-gray-100 text-xs font-medium text-gray-600">
+                <span class="text-gray-400 uppercase tracking-wider font-bold">Quick Filters:</span>
+                <span class="px-3 py-1.5 bg-blue-50 text-indiaBlue rounded-full cursor-pointer hover:bg-blue-100 border border-blue-200">Work Mode: Virtual</span>
+                <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full cursor-pointer hover:bg-gray-200">Duration: 3 Months</span>
+                <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full cursor-pointer hover:bg-gray-200">Stipend: ₹10,000+</span>
+                <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full cursor-pointer hover:bg-gray-200">Eligibility: B.Tech / BE</span>
+                <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full cursor-pointer hover:bg-gray-200">Government Approved</span>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="space-y-6">
+            <div class="flex justify-between items-end">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Top Sectors & Categories</h2>
+                    <p class="text-sm text-gray-500">Explore opportunities aligned with your education and career goals</p>
+                </div>
+                <a href="#" class="text-sm font-semibold text-indiaBlue hover:underline flex items-center">View All <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i></a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-5 bg-white rounded-xl border border-gray-200 hover:border-indiaBlue hover:shadow-md transition cursor-pointer group">
+                    <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center text-indiaBlue group-hover:bg-indiaBlue group-hover:text-white transition mb-3">
+                        <i data-lucide="building-2"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 text-base">Public Sector & Ministries</h3>
+                    <p class="text-xs text-gray-500 mt-1">4,200+ Openings</p>
+                </div>
+
+                <div class="p-5 bg-white rounded-xl border border-gray-200 hover:border-indiaBlue hover:shadow-md transition cursor-pointer group">
+                    <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center text-indiaOrange group-hover:bg-indiaOrange group-hover:text-white transition mb-3">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 text-base">Software & AI Tech</h3>
+                    <p class="text-xs text-gray-500 mt-1">18,500+ Openings</p>
+                </div>
+
+                <div class="p-5 bg-white rounded-xl border border-gray-200 hover:border-indiaBlue hover:shadow-md transition cursor-pointer group">
+                    <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center text-indiaGreen group-hover:bg-indiaGreen group-hover:text-white transition mb-3">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 text-base">Core Engineering & R&D</h3>
+                    <p class="text-xs text-gray-500 mt-1">9,800+ Openings</p>
+                </div>
+
+                <div class="p-5 bg-white rounded-xl border border-gray-200 hover:border-indiaBlue hover:shadow-md transition cursor-pointer group">
+                    <div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition mb-3">
+                        <i data-lucide="landmark"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 text-base">Banking & Financial Services</h3>
+                    <p class="text-xs text-gray-500 mt-1">6,400+ Openings</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Internships Grid -->
+        <section class="space-y-6">
+            <div class="flex justify-between items-end">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Featured & Verified Internships</h2>
+                    <p class="text-sm text-gray-500">Handpicked opportunities from government bodies and top corporations</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Card 1: Govt/NITI Aayog -->
+                <div class="bg-white rounded-xl border border-gray-200 hover:shadow-lg transition flex flex-col justify-between overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 bg-green-50 text-indiaGreen font-bold text-[10px] rounded uppercase tracking-wider border border-green-200">
+                                Government Body
+                            </span>
+                            <span class="text-xs text-gray-400">Deadline: Oct 15</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 hover:text-indiaBlue cursor-pointer">Public Policy & Data Analytics Intern</h3>
+                        <p class="text-sm font-medium text-gray-600">NITI Aayog - NITI Internship Scheme</p>
+                        
+                        <div class="mt-4 space-y-2 text-xs text-gray-500">
+                            <div class="flex items-center space-x-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i><span>New Delhi (On-site)</span></div>
+                            <div class="flex items-center space-x-2"><i data-lucide="clock" class="w-4 h-4 text-gray-400"></i><span>6 Months Duration</span></div>
+                            <div class="flex items-center space-x-2"><i data-lucide="circle-dollar-sign" class="w-4 h-4 text-gray-400"></i><span>₹10,000 / month</span></div>
+                            <div class="flex items-center space-x-2"><i data-lucide="graduation-cap" class="w-4 h-4 text-gray-400"></i><span>Undergraduate / Postgraduate</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-between items-center">
+                        <button class="text-xs font-semibold text-gray-600 hover:text-indiaNavy flex items-center space-x-1">
+                            <i data-lucide="bookmark" class="w-4 h-4"></i><span>Save</span>
+                        </button>
+                        <button class="px-4 py-2 bg-indiaBlue hover:bg-indiaNavy text-white font-medium rounded-lg text-xs transition">Apply Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 2: ISRO -->
+                <div class="bg-white rounded-xl border border-gray-200 hover:shadow-lg transition flex flex-col justify-between overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 bg-green-50 text-indiaGreen font-bold text-[10px] rounded uppercase tracking-wider border border-green-200">
+                                PSU / Govt
+                            </span>
+                            <span class="text-xs text-gray-400">Deadline: Oct 20</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 hover:text-indiaBlue cursor-pointer">Avionics & Embedded Systems Trainee</h3>
+                        <p class="text-sm font-medium text-gray-600">ISRO - Satellite Centre</p>
+                        
+                        <div class="mt-4 space-y-2 text-xs text-gray-500">
+                            <div class="flex items-center space-x-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i><span>Bengaluru, Karnataka</span></div>
+                            <div class="flex items-center space-x-2"><i data-lucide="clock" class="w-4 h-4 text-gray-400"></i><span>3 Months Duration</span></div>
+                            <div class="flex items-center space-x-2"><i data-lucide="circle-dollar-sign" class="w-4 h-4 text-gray-400"></i><span>₹15,000 / month</span></div>
+                            <div class="flex items-center space-x-2"><i data-lucide="graduation-cap" class="w-4 h-4 text-gray-400"></i><span>B.E. / B.Tech (ECE/CSE/EEE)</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-between items-center">
+                        <button class="text-xs font-semibold text-gray-600 hover:text-indiaNavy flex items-center space-x-1">
+                            <i data-lucide="bookmark" class="w-4 h-4"></i><span>Save</span>
+                        </button>
+                        <button class="px-4 py-2 bg-indiaBlue hover:bg-indiaNavy text-white font-medium rounded-lg text-xs transition">Apply Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Private Corporate -->
+                <div class="bg-white rounded-xl border border-gray-200 hover:shadow-lg transition flex flex-col justify-between overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 bg-blue-50 text-indiaBlue font-bold text-[10px] rounded uppercase tracking-wider border border-blue-200">
+                                Corporate Sector
+                            </span>
+                            <span class="text-xs text-gray-400">Deadline: Oct 10</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 hover:text-indiaBlue cursor-pointer">Full Stack Web Development Intern</h3>
+                        <p class="text-sm font-medium text-gray-600">Tata Consultancy Services (TCS)</p>
+                        
+                        <div class="mt-4 space-y-2 text-xs text-gray-500">
+                            <div class="flex items-center space-x-2"><i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i><span>Hybrid (Hyderabad / Remote)</span></div>
+                            <div class="flex items-center space-x-2"><i data-lucide="clock" class="w-4 h-4 text-gray-400"></i><span>6 Months Duration</span></div>
+                            <div class="flex items-center space-x-2"><i data-lucide="circle-dollar-sign" class="w-4 h-4 text-gray-400"></i><span>₹20,000 / month</span></div>
+                            <div class="flex items-center space-x-2"><i data-lucide="graduation-cap" class="w-4 h-4 text-gray-400"></i><span>All Technical Degrees</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-between items-center">
+                        <button class="text-xs font-semibold text-gray-600 hover:text-indiaNavy flex items-center space-x-1">
+                            <i data-lucide="bookmark" class="w-4 h-4"></i><span>Save</span>
+                        </button>
+                        <button class="px-4 py-2 bg-indiaBlue hover:bg-indiaNavy text-white font-medium rounded-lg text-xs transition">Apply Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Student Dashboard Preview Component -->
+        <section id="dashboard" class="bg-gray-100 p-8 rounded-2xl border border-gray-200 space-y-6">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Student Application Dashboard Preview</h2>
+                    <p class="text-sm text-gray-600">Track your submitted applications, saved internships, and digital profile</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-xs bg-green-100 text-green-800 font-semibold px-3 py-1 rounded-full border border-green-300">Profile 85% Complete</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="border-b border-gray-200 bg-gray-50 px-6 py-3 flex space-x-6 text-sm font-semibold text-gray-600">
+                    <button class="text-indiaBlue border-b-2 border-indiaBlue pb-2">Active Applications (3)</button>
+                    <button class="hover:text-gray-900 pb-2">Saved Opportunities (2)</button>
+                    <button class="hover:text-gray-900 pb-2">Resume & Documents</button>
+                </div>
+
+                <div class="divide-y divide-gray-100">
+                    <!-- Dashboard Row 1 -->
+                    <div class="p-4 sm:p-6 flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+                        <div class="space-y-1">
+                            <div class="flex items-center space-x-2">
+                                <h4 class="font-bold text-gray-900">Research & Analytics Associate</h4>
+                                <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">Under Review</span>
+                            </div>
+                            <p class="text-xs text-gray-500">Ministry of External Affairs | Applied on 12 Sep 2026</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="text-right hidden sm:block">
+                                <div class="text-xs font-semibold text-gray-700">App ID: #IND-9082</div>
+                                <div class="text-[10px] text-gray-400">Next Stage: Document Verification</div>
+                            </div>
+                            <button class="px-3 py-1.5 border border-gray-300 rounded text-xs font-medium hover:bg-gray-50">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Row 2 -->
+                    <div class="p-4 sm:p-6 flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+                        <div class="space-y-1">
+                            <div class="flex items-center space-x-2">
+                                <h4 class="font-bold text-gray-900">Cybersecurity Operations Intern</h4>
+                                <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded">Shortlisted for Assessment</span>
+                            </div>
+                            <p class="text-xs text-gray-500">NIC (National Informatics Centre) | Applied on 05 Sep 2026</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="text-right hidden sm:block">
+                                <div class="text-xs font-semibold text-gray-700">App ID: #IND-7712</div>
+                                <div class="text-[10px] text-gray-400">Test Scheduled: Oct 02</div>
+                            </div>
+                            <button class="px-3 py-1.5 bg-indiaBlue text-white rounded text-xs font-medium hover:bg-indiaNavy">Take Test</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold text-gray-900 text-center">Student Success Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-4">
+                    <p class="text-xs text-gray-600 italic">"Securing an internship at NITI Aayog through InternIndia transformed my career trajectory. The transparent stipend direct transfer gave me complete financial peace of mind."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-indiaNavy text-white rounded-full flex items-center justify-center font-bold">PR</div>
+                        <div>
+                            <div class="text-sm font-bold text-gray-900">Priya Sharma</div>
+                            <div class="text-xs text-gray-500">Delhi Technological University</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-4">
+                    <p class="text-xs text-gray-600 italic">"The single unified portal made applying across government ministries and top tech firms so simple. The filter by stipend and eligibility saved me weeks of manual work."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-indiaOrange text-white rounded-full flex items-center justify-center font-bold">RK</div>
+                        <div>
+                            <div class="text-sm font-bold text-gray-900">Rahul Kumar</div>
+                            <div class="text-xs text-gray-500">IIT Madras</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm space-y-4">
+                    <p class="text-xs text-gray-600 italic">"As a student from Tier-3 city, getting a verified internship at a top PSU was a dream. InternIndia provided equal opportunity and direct tracking."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-indiaGreen text-white rounded-full flex items-center justify-center font-bold">AS</div>
+                        <div>
+                            <div class="text-sm font-bold text-gray-900">Ananya Singh</div>
+                            <div class="text-xs text-gray-500">NIT Trichy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="bg-white p-8 rounded-2xl border border-gray-200 space-y-6">
+            <h2 class="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
+            <div class="space-y-4 text-sm">
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <h3 class="font-semibold text-gray-900">Who is eligible to apply for internships on InternIndia?</h3>
+                    <p class="text-xs text-gray-600 mt-1">Indian students pursuing Diploma, Undergraduate, or Postgraduate degrees from recognized universities are eligible. Specific eligibility criteria vary by listing.</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <h3 class="font-semibold text-gray-900">How is the monthly stipend distributed for government internships?</h3>
+                    <p class="text-xs text-gray-600 mt-1">Stipends for PM Internship and PSU roles are directly credited into students' Aadhaar-linked bank accounts via Direct Benefit Transfer (DBT).</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-indiaNavy text-white pt-12 pb-6 border-t-4 border-indiaOrange">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm pb-8 border-b border-blue-900">
+            <div class="space-y-3">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-white text-indiaNavy rounded flex items-center justify-center font-bold text-lg">II</div>
+                    <span class="text-xl font-black">Intern<span class="text-indiaOrange">India</span></span>
+                </div>
+                <p class="text-xs text-gray-300">National Student Internship Portal by Govt of India.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-indiaOrange uppercase text-xs tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-xs text-gray-300">
+                    <li><a href="#" class="hover:underline">PM Internship Scheme</a></li>
+                    <li><a href="#" class="hover:underline">PSU Opportunities</a></li>
+                    <li><a href="#" class="hover:underline">Private Corporate Roles</a></li>
+                    <li><a href="#" class="hover:underline">State Sector Programs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-indiaOrange uppercase text-xs tracking-wider">Help & Support</h4>
+                <ul class="space-y-2 text-xs text-gray-300">
+                    <li><a href="#" class="hover:underline">Student User Manual</a></li>
+                    <li><a href="#" class="hover:underline">Grievance Portal</a></li>
+                    <li><a href="#" class="hover:underline">Verification Guidelines</a></li>
+                    <li><a href="#" class="hover:underline">Contact Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-indiaOrange uppercase text-xs tracking-wider">Contact Us</h4>
+                <p class="text-xs text-gray-300">National Skill Development Complex,</p>
+                <p class="text-xs text-gray-300">New Delhi - 110001</p>
+                <p class="text-xs text-gray-300 mt-2">Helpline: 1800-11-2026 (Toll Free)</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-400">
+            <p>&copy; 2026 InternIndia Portal. All Rights Reserved.</p>
+            <div class="flex space-x-4 mt-2 sm:mt-0">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
