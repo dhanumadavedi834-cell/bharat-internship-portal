@@ -524,5 +524,13 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
         <meta name="google-site-verification" content="E6vYksMeRhBC6TsvDZyuLk8aJCDuDo42MDKBYkZDlsE" />
+            
+
+Skip to content
+Using Gmail with screen readers
+1 of 13
+<!-- Firebase Web SDKs (v10 modular / CDN) --> <script type="module"> import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"; import { getAuth, GoogleAuthProvider, signInWithPopup, sendEmailVerification } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"; // Your Firebase project configuration const firebaseConfig = { apiKey: "YOUR_FIREBASE_API_KEY", authDomain: "bharat-internship-portal.firebaseapp.com", projectId: "project-1061646797231", storageBucket: "project-1061646797231.appspot.com", messagingSenderId: "1061646797231", appId: "YOUR_FIREBASE_APP_ID" }; // Initialize Firebase const app = initializeApp(firebaseConfig); const auth = getAuth(app); const provider = new GoogleAuthProvider(); // Function: Google Sign-In Button Handler window.signInWithGoogle = function() { signInWithPopup(auth, provider) .then((result) => { const user = resul...
+
+
 </script>
 </html>
